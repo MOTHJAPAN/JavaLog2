@@ -8,8 +8,6 @@ import android.util.Log;
 public class MainActivity extends AppCompatActivity {
 
 
-    private String name = "剛史";
-    private String age = "37";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,14 +15,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        Human human = new Human("剛史", 37);     // 名前をTakafumi、年齢37歳で、Humanのインスタンスを作る
+        Human human = new Human("剛史", 37,"趣味");     // 名前をTakafumi、年齢37歳で、Humanのインスタンスを作る
 
         human.say();
-        Log.d("javatest", "私の名前は" + this.name + "です。");
-        Log.d("javatest", "年は" + this.age + "歳です。");
-        human.think();                                      //thinkを実装
-
-
+        human.think();          //thinkを実装
     }
 
 }
